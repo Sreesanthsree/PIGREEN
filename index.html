@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PIGREEN:POLYHOUSE AUTOMATION</title>
+  <link rel="stylesheet" href="./style.css" type="text/css">
+  <link rel="icon" type="image/x-icon" href="/Agri-solut.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script> 
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h2 class="wf">POLY HOUSE AUTOMATION DASHBOARD</h2>
+    </header>
+    <div class="data-readings">
+      <div class="dht11 item">
+        <p>TEMPARATURE: <span id="temp"></span>°C</p>
+        <p>HUMIDITY: <span id="hum"></span>%</p>
+      </div>
+      <div class="wiresensor item">
+        <p>AMBIENT TEMP:<span id="wire"></span>°C</p>
+      </div>
+      <div class="soilsensor item">
+        <p>SOIL STATE<span id="soil"></span></p>
+      </div>
+      <div class="switch item">
+        <label for="servo">WINDOW</label>
+        <input type="checkbox" id="servo" value="1">
+        <br>
+        <label for="pump">PUMP</label>
+        <input type="checkbox" id="pump" value="1">
+        <br>
+        <label for="fan">FAN</label>
+        <input type="checkbox" id="fan" value="1">
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
